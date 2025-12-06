@@ -25,8 +25,8 @@ A full-stack application built with React, Node.js/Express, and SQLite to browse
 
 1.  **Clone the repository**
     ```bash
-    git clone https://github.com/Dhivyabj/prodcut-showcase.git
-    cd prodcut-showcase
+    git clone https://github.com/Dhivyabj/product-showcase.git
+    cd product-showcase
     ```
 
 2.  **Backend Setup**
