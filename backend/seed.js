@@ -64,7 +64,7 @@ const products = [
         short_desc: 'A journey through the galaxies.',
         long_desc: 'A best-selling novel about interstellar travel and the mystery of time.',
         price: 15.99,
-        image_url: 'https://placehold.co/300x200?text=Antigravity+Book'
+        image_url: '/images/scifi-novel.png'
     },
     {
         name: 'Fantasy Chronicles',
@@ -72,7 +72,7 @@ const products = [
         short_desc: 'Epic battles and magic.',
         long_desc: 'Dive into a world of dragons, wizards, and ancient prophecies in this thrilling fantasy epic.',
         price: 18.99,
-        image_url: 'https://placehold.co/300x200?text=Fantasy+Book'
+        image_url: '/images/fantasy-book.png'
     }
 ];
 
