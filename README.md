@@ -2,6 +2,20 @@
 
 A full-stack application built with React, Node.js/Express, and SQLite to browse products and submit enquiries.
 
+## Features
+
+- **Product Listing**: Browse products with pagination, search, and category filtering.
+- **Product Details**: View detailed information about a product, including custom AI-generated images.
+- **Enquiry System**: Submit an enquiry for a specific product via a modal form.
+- **Admin Dashboard**: View all customer enquiries in a dedicated admin interface.
+- **Responsive Design**: Modern UI styled with **Tailwind CSS**.
+
+## Tech Stack
+
+- **Frontend**: React, React Router, Axios, Tailwind CSS.
+- **Backend**: Node.js, Express.
+- **Database**: SQLite.
+
 ## Prerequisites
 
 - Node.js (v14 or higher)
@@ -9,24 +23,25 @@ A full-stack application built with React, Node.js/Express, and SQLite to browse
 
 ## Setup & Installation
 
-1.  **Clone/Open the repository**
-     Navigate to the project root.
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/Dhivyabj/prodcut-showcase.git
+    cd prodcut-showcase
+    ```
 
 2.  **Backend Setup**
     ```bash
     cd backend
     npm install
     ```
-    - This will install dependencies like `express`, `sqlite3`, `cors`, etc.
-    - The database `products.sqlite` is already seeded or will be created/seeded on start if `seed.js` is run.
-    - To re-seed the database: `node seed.js`
+    - The database `products.sqlite` will be created and seeded automatically when you run the seed script.
+    - **Initialize Data**: `node seed.js` (This resets the DB and adds sample products).
 
 3.  **Frontend Setup**
     ```bash
     cd frontend
     npm install
     ```
-    - Installs React and other dependencies.
 
 ## Running the Application
 
@@ -42,23 +57,14 @@ A full-stack application built with React, Node.js/Express, and SQLite to browse
     ```bash
     npm start
     ```
-    - Opens the app at `http://localhost:3000`.
+    - Opens the app at `http://localhost:3000` (or another available port like 3001, 3002, etc.).
 
-## Features
+## Usage
 
-- **Product Listing**: Browse products with pagination, search, and category filtering.
-- **Product Details**: View detailed information about a product.
-- **Enquiry System**: Submit an enquiry for a specific product via a modal form.
-- **Admin API**: Backend endpoints to retrieve enquiries (e.g., via Postman).
+- **User View**: Navigate to the home page to browse products. Click "View Details" to see more and "Enquire Now" to contact.
+- **Admin View**: Click the "Admin" link in the header or navigate to `/admin` to view submitted enquiries.
 
-## Tech Stack
+## Project Structure
 
-- **Frontend**: React, React Router, Axios, CSS Modules (or App.css).
-- **Backend**: Node.js, Express.
-- **Database**: SQLite.
-
-## Assumptions & Trade-offs
-
-- **No Authentication**: For simplicity as per requirements, no user login is implemented.
-- **Local Database**: Uses SQLite file-based DB to avoid external service deps.
-- **Styling**: Custom CSS used instead of a UI library to demonstrate core CSS skills.
+- `backend/`: Express server, API routes, database (SQLite), and seed script.
+- `frontend/`: React application, components, and Tailwind configuration.
