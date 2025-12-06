@@ -19,20 +19,7 @@
             "dest": "/backend/index.js"
         },
         {
-            "src": "/static/(.*)",
-            "dest": "/frontend/static/$1"
-        },
-        {
-            "src": "/images/(.*)",
-            "dest": "/frontend/images/$1"
-        },
-        {
-            "src": "/favicon.ico",
-            "dest": "/frontend/favicon.ico"
-        },
-        {
-            "src": "/manifest.json",
-            "dest": "/frontend/manifest.json"
+            "handle": "filesystem"
         },
         {
             "src": "/(.*)",
