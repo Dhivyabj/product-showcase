@@ -20,7 +20,11 @@ app.get('/', (req, res) => {
     res.send('Product Showcase API is running.');
 });
 
-// Start server
-app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
-});
+// Start server if not running in serverless environment (e.g. Vercel)
+if (require.main === module) {
+    app.listen(PORT, () => {
+        console.log(`Server is running on http://localhost:${PORT}`);
+    });
+}
+
+module.exports = app;
