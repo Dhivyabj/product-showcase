@@ -68,3 +68,6 @@ A full-stack application built with React, Node.js/Express, and SQLite to browse
 
 - `backend/`: Express server, API routes, database (SQLite), and seed script.
 - `frontend/`: React application, components, and Tailwind configuration.
+
+
+<img width="1889" height="910" alt="image" src="https://github.com/user-attachments/assets/4e29733b-c102-4fa5-9f53-dce1c2c20016" />
